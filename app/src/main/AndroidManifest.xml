@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieApp">
+        <activity android:name=".MovieDetailActivity"></activity>
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/SplashScreenTheme">
@@ -17,6 +18,7 @@
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
@@ -26,14 +28,12 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:scheme="https"
                     android:host="yohan001-movieapp.github.com"
-                    android:pathPrefix="/movie/" />
+                    android:pathPrefix="/movie/"
+                    android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
